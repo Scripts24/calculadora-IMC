@@ -1,10 +1,88 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: none;
-    outline: none;
+* {
+    margin     : 0;
+    padding    : 0;
+    box-sizing : border-box;
+    border     : none;
+    outline    : none;
     font-family: 'Oswald', sans-serif;
+}
+
+body {
+    height    : 100vh;
+    background: #ebeb216c;
+}
+
+.title {
+    margin-bottom      : 2rem;
+    -webkit-text-stroke: 1px hsl(180, 4%, 72%);
+    color              : transparent;
+}
+
+.container {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    width         : 400px;
+    min-height    : 650px;
+    margin        : auto;
+    padding       : 20px;
+    border        : 30px groove rgba(62, 136, 55, 0.692);
+    background    : rgb(54, 52, 52);
+    color         : antiquewhite;
+    border-radius : 40px;
+}
+
+#calculator {
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    justify-content: center;
+    gap            : 30px;
+    margin-bottom  : 20px;
+}
+
+input[type="number"] {
+    padding      : 10px;
+    width        : 150px;
+    font-size    : 1rem;
+    border       : 4px solid #80e253c5;
+    border-radius: 15px;
+}
+
+button {
+    padding         : 10px 20px;
+    background-color: #80e253c5;
+    border-radius   : 10px;
+    color           : antiquewhite;
+    font-size: 1rem;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: antiquewhite;
+    color: #272626;
+}
+
+#result{
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    background-color: #d6b032fa;
+    padding: 10px 5px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 8px;
+    border: 3px solid #80e253c5;
+    font-size: 1.1rem;
+}
+
+th{
+    background-color: #80e25369;
 }
