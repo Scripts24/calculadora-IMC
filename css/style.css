@@ -12,6 +12,7 @@
 body {
     height    : 100vh;
     background: #131419;
+    overflow: hidden;
 }
 
 .title {
@@ -113,6 +114,6 @@ th {
     }
 
     table {
-        top: 360px;
+        top: 370px;
     }
 }
