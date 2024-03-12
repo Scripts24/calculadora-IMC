@@ -37,7 +37,6 @@ body {
 }
 
 #calculator {
-    min-height     : 150px;
     display        : flex;
     flex-direction : column;
     align-items    : center;
@@ -105,4 +104,15 @@ td {
 th {
     background-color: antiquewhite;
     color           : #131419;
+}
+
+@media (max-width: 450px) {
+    .container {
+        width     : 320px;
+        min-height: 520px;
+    }
+
+    table {
+        top: 360px;
+    }
 }
